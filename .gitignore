@@ -1,0 +1,6 @@
+**/*.lock
+**/*.lock.*
+**/*.tfstate
+**/*.exe
+**/.terraform
+**/*.backup
