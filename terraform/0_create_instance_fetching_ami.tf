@@ -4,26 +4,6 @@ provider "aws" {
   secret_key = var.SECRET_KEY
 }
 
-variable "ACCESS_KEY" {
-  type        = string
-  default     = ""
-  description = "AWS accesskey as defined by Environment var TF_VAR_ACCESS_KEY"
-}
-
-variable "SECRET_KEY" {
-  type        = string
-  default     = ""
-  description = "AWS secret as defined by Environment var TF_VAR_SECRET_KEY"
-}
-
-variable "REGION" {
-
-  type        = string
-  default     = "eu-central-1a"
-  description = "AWS secret as defined by Environment var TF_VAR_SECRET_KEY"
-}
-
-
 # output "PrintVar" {
 #      value = "${data.aws_ami.latest-ubuntu.description}\n${var.ACCESS_KEY}\n${var.SECRET_KEY}"
 #  }
